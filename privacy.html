@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ReadyHire — Privacy Policy</title>
+<style>
+  :root { --bg:#FCFAF7; --card:#fff; --ink:#14110D; --ink-2:#5A5147; --ink-3:#8B8378; --line:#EFE8DE; --accent:#D9552B; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:'Plus Jakarta Sans',system-ui,sans-serif; line-height:1.6; }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:8px; }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:-.02em; font-size:18px; }
+  .brand img { width:32px; height:32px; }
+  .toggle button { border:1px solid var(--line); background:var(--card); color:var(--ink-2); font-weight:700; font-size:12px; padding:6px 12px; border-radius:10px; cursor:pointer; }
+  h1 { font-size:26px; letter-spacing:-.03em; margin:16px 0 4px; }
+  .updated { color:var(--ink-3); font-size:13px; margin:0 0 24px; }
+  h2 { font-size:16px; margin:26px 0 6px; }
+  p { color:var(--ink-2); margin:6px 0; }
+  a { color:var(--accent); }
+  [dir=rtl] { text-align:right; }
+  .lang { display:none; }
+  .lang.active { display:block; }
+  footer { margin-top:40px; color:var(--ink-3); font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><img src="./logo.svg" alt="" />ReadyHire</div>
+    <div class="toggle"><button onclick="setLang('ar')" id="btn">العربية</button></div>
+  </header>
+
+  <!-- English -->
+  <div class="lang active" id="en" dir="ltr">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 29 July 2026</p>
+
+    <h2>1. Data We Collect</h2>
+    <p>Account data: name, email, and role.</p>
+    <p>Agent profile: gender, nationality, age, residence, education, experience, expected salary, availability, WhatsApp number, and voice notes.</p>
+    <p>Recruiter profile: name, company details, company email, and WhatsApp number.</p>
+    <p>Usage data: jobs you view and applications you make.</p>
+
+    <h2>2. How We Use It</h2>
+    <p>To operate the marketplace: showing jobs to Agents, showing applicants to the Recruiters they applied to, and enabling WhatsApp contact.</p>
+    <p>Recruiters only see an applicant's contact details after that Agent applies to their job.</p>
+
+    <h2>3. Storage &amp; Processing</h2>
+    <p>Data is stored using Supabase (Postgres database and object storage). Voice notes are kept in a private bucket and shared only via short-lived signed links with the relevant recruiter.</p>
+
+    <h2>4. Sharing</h2>
+    <p>We do not sell your data. Contact details are shared only between an Agent and a Recruiter in the context of a job application.</p>
+
+    <h2>5. Your Rights</h2>
+    <p>You can edit your profile at any time and permanently delete your account (and all associated data, including voice notes) from Settings → Delete Account.</p>
+
+    <h2>6. Children</h2>
+    <p>ReadyHire is not intended for anyone under 16 years of age.</p>
+
+    <h2>7. Contact</h2>
+    <p>For privacy questions or data requests, contact <a href="mailto:readyhire48@gmail.com">readyhire48@gmail.com</a>.</p>
+  </div>
+
+  <!-- Arabic -->
+  <div class="lang" id="ar" dir="rtl">
+    <h1>سياسة الخصوصية</h1>
+    <p class="updated">آخر تحديث: 29 يوليو 2026</p>
+
+    <h2>١. البيانات التي نجمعها</h2>
+    <p>بيانات الحساب: الاسم والبريد الإلكتروني والدور.</p>
+    <p>ملف الموظف: الجنس والجنسية والعمر ومكان الإقامة والتعليم والخبرة والراتب المتوقع والإتاحة ورقم الواتساب والمقاطع الصوتية.</p>
+    <p>ملف مسؤول التوظيف: الاسم وبيانات الشركة وبريد الشركة ورقم الواتساب.</p>
+    <p>بيانات الاستخدام: الوظائف التي تشاهدها والطلبات التي تقدّمها.</p>
+
+    <h2>٢. كيف نستخدمها</h2>
+    <p>لتشغيل السوق: عرض الوظائف للموظفين، وعرض المتقدمين لمسؤولي التوظيف الذين تقدّموا إليهم، وتمكين التواصل عبر واتساب.</p>
+    <p>لا يرى مسؤولو التوظيف بيانات تواصل المتقدم إلا بعد أن يتقدّم ذلك الموظف لوظيفتهم.</p>
+
+    <h2>٣. التخزين والمعالجة</h2>
+    <p>تُخزَّن البيانات باستخدام Supabase (قاعدة بيانات Postgres وتخزين الملفات). تُحفظ المقاطع الصوتية في حاوية خاصة وتُشارَك فقط عبر روابط موقّعة قصيرة الأمد مع مسؤول التوظيف المعني.</p>
+
+    <h2>٤. المشاركة</h2>
+    <p>نحن لا نبيع بياناتك. تُشارَك بيانات التواصل فقط بين الموظف ومسؤول التوظيف في سياق طلب توظيف.</p>
+
+    <h2>٥. حقوقك</h2>
+    <p>يمكنك تعديل ملفك في أي وقت وحذف حسابك نهائياً (وجميع البيانات المرتبطة به بما فيها المقاطع الصوتية) من الإعدادات ← حذف الحساب.</p>
+
+    <h2>٦. الأطفال</h2>
+    <p>ReadyHire غير مخصّص لأي شخص دون سن 16 عاماً.</p>
+
+    <h2>٧. التواصل</h2>
+    <p>للأسئلة المتعلقة بالخصوصية أو طلبات البيانات، تواصل عبر <a href="mailto:readyhire48@gmail.com">readyhire48@gmail.com</a>.</p>
+  </div>
+
+  <footer>© 2026 ReadyHire · <a href="./terms.html">Terms of Service</a></footer>
+</div>
+<script>
+  function setLang(l){
+    var other = l === 'ar' ? 'en' : 'ar';
+    document.getElementById(l).classList.add('active');
+    document.getElementById(other).classList.remove('active');
+    document.getElementById('btn').textContent = l === 'ar' ? 'English' : 'العربية';
+    document.getElementById('btn').setAttribute('onclick', "setLang('" + (l==='ar'?'en':'ar') + "')");
+    document.documentElement.lang = l;
+  }
+</script>
+</body>
+</html>
