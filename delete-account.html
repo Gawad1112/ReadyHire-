@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ReadyHire — Delete Your Account</title>
+<style>
+  :root { --bg:#FCFAF7; --card:#fff; --ink:#14110D; --ink-2:#5A5147; --ink-3:#8B8378; --line:#EFE8DE; --accent:#D9552B; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:'Plus Jakarta Sans',system-ui,sans-serif; line-height:1.6; }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:8px; }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:-.02em; font-size:18px; }
+  .brand img { width:32px; height:32px; }
+  .toggle button { border:1px solid var(--line); background:var(--card); color:var(--ink-2); font-weight:700; font-size:12px; padding:6px 12px; border-radius:10px; cursor:pointer; }
+  h1 { font-size:26px; letter-spacing:-.03em; margin:16px 0 4px; }
+  .updated { color:var(--ink-3); font-size:13px; margin:0 0 24px; }
+  h2 { font-size:16px; margin:26px 0 6px; }
+  p { color:var(--ink-2); margin:6px 0; }
+  ol, ul { color:var(--ink-2); margin:6px 0; padding-inline-start:22px; }
+  li { margin:4px 0; }
+  a { color:var(--accent); }
+  [dir=rtl] { text-align:right; }
+  .lang { display:none; }
+  .lang.active { display:block; }
+  footer { margin-top:40px; color:var(--ink-3); font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><img src="./logo.svg" alt="" />ReadyHire</div>
+    <div class="toggle"><button onclick="setLang('ar')" id="btn">العربية</button></div>
+  </header>
+
+  <!-- English -->
+  <div class="lang active" id="en" dir="ltr">
+    <h1>Delete Your Account</h1>
+    <p class="updated">Last updated: 15 September 2026</p>
+
+    <p>This page explains how to delete your <strong>ReadyHire</strong> account and the data associated with it.</p>
+
+    <h2>Option 1 — Delete in the app (instant)</h2>
+    <ol>
+      <li>Open the ReadyHire app and sign in.</li>
+      <li>Go to <strong>Settings</strong>.</li>
+      <li>Scroll to <strong>Delete Account</strong> and tap it.</li>
+      <li>Confirm. Your account and associated data are permanently deleted immediately.</li>
+    </ol>
+
+    <h2>Option 2 — Request deletion by email</h2>
+    <p>If you can't access the app, email <a href="mailto:readyhire48@gmail.com">readyhire48@gmail.com</a> from the email address on your account, with the subject <strong>"Delete my account"</strong>. We will verify and delete your account within 30 days.</p>
+
+    <h2>What is deleted</h2>
+    <p>Deleting your account permanently removes: your profile (name, contact details, gender, nationality, age, residence, education, experience, expected salary, availability), your voice notes, your chat messages and attachments, your job applications, and any jobs you posted.</p>
+
+    <h2>What is kept</h2>
+    <p>We do not retain your personal data after deletion. We may keep a limited record only where required by law or to prevent fraud, abuse, or safety issues (for example, a record of a resolved abuse report), and only for as long as necessary for that purpose.</p>
+
+    <h2>Contact</h2>
+    <p>For any questions about deleting your data, contact <a href="mailto:readyhire48@gmail.com">readyhire48@gmail.com</a>.</p>
+  </div>
+
+  <!-- Arabic -->
+  <div class="lang" id="ar" dir="rtl">
+    <h1>حذف حسابك</h1>
+    <p class="updated">آخر تحديث: 15 سبتمبر 2026</p>
+
+    <p>توضّح هذه الصفحة كيفية حذف حسابك في <strong>ReadyHire</strong> والبيانات المرتبطة به.</p>
+
+    <h2>الطريقة الأولى — الحذف من داخل التطبيق (فوري)</h2>
+    <ol>
+      <li>افتح تطبيق ReadyHire وسجّل الدخول.</li>
+      <li>انتقل إلى <strong>الإعدادات</strong>.</li>
+      <li>انزل إلى <strong>حذف الحساب</strong> واضغط عليه.</li>
+      <li>أكّد العملية. يتم حذف حسابك والبيانات المرتبطة به نهائياً على الفور.</li>
+    </ol>
+
+    <h2>الطريقة الثانية — طلب الحذف عبر البريد الإلكتروني</h2>
+    <p>إذا تعذّر عليك الوصول إلى التطبيق، أرسل بريداً إلكترونياً إلى <a href="mailto:readyhire48@gmail.com">readyhire48@gmail.com</a> من البريد المسجَّل في حسابك، بعنوان <strong>«حذف حسابي»</strong>. سنتحقّق من الطلب ونحذف حسابك خلال 30 يوماً.</p>
+
+    <h2>ما الذي يُحذف</h2>
+    <p>يؤدي حذف حسابك إلى الإزالة النهائية لـ: ملفك الشخصي (الاسم وبيانات التواصل والجنس والجنسية والعمر ومكان الإقامة والتعليم والخبرة والراتب المتوقع والإتاحة)، والمقاطع الصوتية، ورسائل المحادثة ومرفقاتها، وطلبات التوظيف، وأي وظائف قمت بنشرها.</p>
+
+    <h2>ما الذي يُحتفظ به</h2>
+    <p>لا نحتفظ ببياناتك الشخصية بعد الحذف. وقد نحتفظ بسجل محدود فقط عندما يقتضي القانون ذلك أو لمنع الاحتيال أو إساءة الاستخدام أو لأغراض السلامة (مثل سجل بلاغ إساءة تمت معالجته)، وللمدة اللازمة لذلك الغرض فقط.</p>
+
+    <h2>التواصل</h2>
+    <p>لأي أسئلة حول حذف بياناتك، تواصل عبر <a href="mailto:readyhire48@gmail.com">readyhire48@gmail.com</a>.</p>
+  </div>
+
+  <footer>© 2026 ReadyHire · <a href="./privacy.html">Privacy Policy</a> · <a href="./terms.html">Terms of Service</a></footer>
+</div>
+<script>
+  function setLang(l){
+    var other = l === 'ar' ? 'en' : 'ar';
+    document.getElementById(l).classList.add('active');
+    document.getElementById(other).classList.remove('active');
+    document.getElementById('btn').textContent = l === 'ar' ? 'English' : 'العربية';
+    document.getElementById('btn').setAttribute('onclick', "setLang('" + (l==='ar'?'en':'ar') + "')");
+    document.documentElement.lang = l;
+  }
+</script>
+</body>
+</html>
